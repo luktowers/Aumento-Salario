@@ -1,13 +1,11 @@
 package aula01;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class aula01 {
     public static void main(String[] args) {
 
         Scanner inputUser = new Scanner(System.in);
-        DecimalFormat decFor = new DecimalFormat("0.00");
         
         System.out.println("Qual é o seu nome?");
         String nome = inputUser.nextLine();
@@ -23,7 +21,7 @@ public class aula01 {
 
 
         if (tempo >=10) {
-            System.out.println(nome + ", seu novo salario é de: " + decFor.format(novoSalario));            
+            System.out.printf("%s, seu novo salario é de R$ %.2f", nome, novoSalario);            
         } else {
             System.out.println(nome + ", você ainda não tem direito a receber aumento");
         }
