@@ -2,7 +2,7 @@ package aula01;
 
 import java.util.Scanner;
 
-public class aula01 {
+public class aumento {
     public static void main(String[] args) {
 
         Scanner inputUser = new Scanner(System.in);
